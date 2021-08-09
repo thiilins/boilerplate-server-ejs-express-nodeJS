@@ -5,6 +5,10 @@ const path = require("path");
 // Definindo a constante que ira ser usada pra  executar métodos do express
 const app = express();
 
+// INSTANCIANDO ROTAS PRINCIPAIS
+const rotas = require("./src/routes");
+app.use(rotas)
+
 // Definindo View Engine
 app.set("view engine", "ejs");
 //Definindo Pasta Views
