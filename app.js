@@ -5,14 +5,14 @@ const path = require("path");
 // Definindo a constante que ira ser usada pra  executar métodos do express
 const app = express();
 
-// INSTANCIANDO ROTAS PRINCIPAIS
-const rotas = require("./src/routes");
-app.use(rotas)
+// INSTANCIANDO ROTAS
+const indexRoutes = require("./src/routes");
+app.use("/", indexRoutes);
 
 // Definindo View Engine
 app.set("view engine", "ejs");
 //Definindo Pasta Views
-app.set("views", path.resolve(__dirname, "/src/views"));
+app.set("views", path.resolve(__dirname, "/src", "views"));
 
 //Definir a pasta de arquivos estáticos
 app.use(express.static(path.resolve(__dirname, "public")));
