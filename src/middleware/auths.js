@@ -1,8 +1,8 @@
-const auth = (req, res, next) => {
-  if (typeof req.session.user != "undefined") {
+module.exports = (req, res, next) => {
+  const { user } = req.session;
+  if (typeof user != "undefined") {
+    res.locals.user = user;
     return next();
-  } else {
-    return res.redirect("/login");
   }
+  return res.redirect("/login");
 };
-module.exports = auth;
