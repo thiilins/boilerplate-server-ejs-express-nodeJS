@@ -1,15 +1,28 @@
 {
-  "name": "server",
+  "name": "boilerplate-server-ejs-express-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Template de Servidor NodeJS utilizando Express, Sequelize, EJS",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiilins/boilerplate-server-ejs-express-nodeJS"
+  },
   "scripts": {
     "start": "node app.js",
     "dev": "./node_modules/.bin/nodemon app.js",
     "devg": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodeJS",
+    "expressJS",
+    "sequelizeORM",
+    "EJS"
+  ],
+  "author": {
+    "name": "Thiago Lins",
+    "email": "falecom@thiagolins.dev.br",
+    "url": "https://www.thiagolins.dev.br"
+  },
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

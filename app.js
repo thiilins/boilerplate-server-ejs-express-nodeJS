@@ -34,6 +34,10 @@ app.set("views", path.resolve("src", "views"));
 // Habilitando o Log via console
 app.use(logger("dev"));
 // Express Session  (Habilitando Sessão)
+/*********************************************************
+ * ANTES DE INICIALIZAR O SERVIDOR ALTERE
+ * O VALOR DA PROPRIEDADE SECRET PARA UM DE SUA ESCOLHA
+ ********************************************************/
 app.use(
   session({
     secret: "Sq0JI88e4$|GI_LMV1qm",
