@@ -6,7 +6,7 @@
   <!-- <a href="https://boilerplateserverejsexpressnodejs.netlify.com">Demo</a> -->
 </div>
 
-<h1 align="center">Boilerplate Server Ejs Express Nodejs</h1>
+<h1 align="center">Boilerplate Server NodeJS com Express (EJS)</h1>
 
 <p align="center">
 
