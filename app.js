@@ -6,7 +6,8 @@
  */
 const express = require("express");
 const app = express();
-const port = 3000;
+const normalizePort = require("./src/helpers/normalizePort");
+const port = normalizePort(process.env.PORT || "3000");
 const maintenance = false;
 /**
  *
