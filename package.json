@@ -8,9 +8,8 @@
     "url": "https://github.com/thiilins/boilerplate-server-ejs-express-nodeJS"
   },
   "scripts": {
-    "start": "node app.js",
-    "dev": "./node_modules/.bin/nodemon app.js",
-    "devg": "nodemon app.js"
+    "start": "node ./src/app.js",
+    "dev": "./node_modules/.bin/nodemon ./src/server.js"
   },
   "keywords": [
     "nodeJS",
@@ -30,6 +29,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
     "multer": "^1.4.3",

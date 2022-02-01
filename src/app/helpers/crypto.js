@@ -1,3 +1,4 @@
+"use strict";
 const bcrypt = require("bcryptjs");
 const crypto = {
   create(data) {
